@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/video-player.png" type="image/x-icon">
+        <link rel="stylesheet" href="videoFadeOut.css">
+        <title>Video Player</title>
+    </head>
+    <body>
+        <section>
+            <video src="video/video.mp4" autoplay="" muted="" loop=""></video>
+        </section>
+        <section>
+            <div class="content">
+                <h2>Fadeout Video Scroll</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eligendi dicta. Itaque, optio! Fuga est ducimus 
+                    placeat asperiores aperiam, quidem nostrum temporibus. Provident mollitia veniam saepe velit est rerum cum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sequi? Inventore asperiores assumenda 
+                    minus voluptatum quibusdam neque vero! Suscipit et velit animi architecto dolorum natus libero facere nam sunt est!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illo tenetur facere 
+                    quod. Iure quod sunt necessitatibus culpa quis? Culpa corporis neque delectus iste accusamus error maiores repellat, 
+                    fuga reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus molestiae 
+                    iste adipisci debitis eveniet? Illum natus 
+                    exercitationem quaerat amet! Vel minima, nisi eius quia explicabo non debitis quaerat sapiente!
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Obcaecati nam odit neque. Amet vero aspernatur commodi nihil accusantium earum vitae praesentium voluptatum 
+                    ducimus pariatur voluptatem, repellendus, ratione facilis. Veritatis, similique? Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Tempora, nam enim esse, incidunt recusandae odio harum omnis.<br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum doloremque fuga quas ipsa rem dignissimos 
+                    cum debitis voluptates quibusdam 
+                    deserunt veritatis autem quaerat eveniet, consequatur, qui blanditiis tenetur aliquid?
+                    doloribus perferendis unde eos dolorum nemo quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nemo mollitia qui nihil dolore consequuntur dolorem cumque consequatur. Natus praesentium 
+                    culpa quod est obcaecati totam dolorem, dignissimos exercitationem aliquid consequuntur nulla.
+                    praesentium illum veniam nobis eaque architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quas, 
+                    labore nemo assumenda Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Aliquid laboriosam totam vitae architecto error repudiandae Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Natus provident cumque consequatur at incidunt 
+                    rem consectetur rerum, temporibus assumenda inventore asperiores ut, enim accusantium velit. Perspiciatis tenetur adipisci eum rem.
+                    qui, nihil asperiores nesciunt explicabo nemo! Eius ullam, inventore deserunt beatae accusamus incidunt nesciunt quae.
+                    aperiam optio? Delectus, omnis. Maxime deleniti placeat, consequatur provident, qui molestiae autem ut officiis ab quisquam rerum?
+                </p>
+            </div>
+        </section>
+        <script type="text/javascript">
+            let video = document.querySelector('video');
+
+            window.addEventListener('scroll', function() {
+                let value = 1 + window.scrollY/-600;
+                video.style.opacity = value;
+            });
+        </script>
+    </body>
+</html>
