@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/clothes-button.png" type="image/x-icon">
+        <link rel="stylesheet" href="buttoneffect.css">
+        <title>Button Effect</title>
+    </head>
+    <body>
+        <a href="#">Button</a>
+        <a href="#">Button</a>
+        <script>
+            const buttons = document.querySelectorAll('a');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    let x = e.clientX - e.target.offsetLeft;
+                    let y = e.clientY - e.target.offsetTop;
+
+                    let animation = document.createElement('span');
+                    animation.style.left = x + 'px';
+                    animation.style.top = y +'px';
+                    this.appendChild(animation);
+
+                    setTimeout(() => {
+                        animation.remove()
+                    }, 1000);
+                })
+            }) 
+        </script>
+    </body>
+</html>
