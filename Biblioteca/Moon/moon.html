@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/moonicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="moon.css">
+        <title>Moon</title>
+    </head>
+    <body>
+        <section>
+            <img src="img/bg.jpg" id="bg" alt="Background">
+            <img src="img/moon.png" id="moon" alt="Moon">
+            <img src="img/mountain.png" id="mountain" alt="Mountain">
+            <img src="img/road.png" id="road" alt="Road">
+            <h2 id="text">Moon Light</h2>
+            <script type="text/javascript">
+                let bg = document.getElementById("bg");
+                let moon = document.getElementById("moon");
+                let mountain = document.getElementById("mountain");
+                let road = document.getElementById("road");
+                let text = document.getElementById("text");
+
+                window.addEventListener('scroll', function() {
+                    var value = window.scrollY;
+
+                    // console.log(value);
+
+                    bg.style.top = value * 0.5 + 'px';
+                    moon.style.left = -value * 0.5 + 'px';
+                    mountain.style.top = -value * 0.15 + 'px';
+                    road.style.top = value * 0.15 + 'px';
+                    text.style.top = value * 1 + 'px';
+
+                });
+            </script>
+        </section>
+        <div class="content">
+            <h2>Background Parallax Javascript</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis 
+                saepe mollitia dicta! Officia voluptatem amet quas deserunt minus aperiam, recusandae qui labore, reiciendis 
+                ipsa cumque nostrum modi laudantium possimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem. Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Optio ut similique odio repellat non porro tenetur veritatis commodi corporis eveniet, 
+                esse excepturi culpa at laboriosam corrupti voluptate molestias itaque nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem.
+            </p>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis 
+                saepe mollitia dicta! Officia voluptatem amet quas deserunt minus aperiam, recusandae qui labore, reiciendis 
+                ipsa cumque nostrum modi laudantium possimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem. Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Optio ut similique odio repellat non porro tenetur veritatis commodi corporis eveniet, 
+                esse excepturi culpa at laboriosam corrupti voluptate molestias itaque nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam incidunt tempora repellendus architecto, delectus in 
+                nulla quasi quae consequuntur id minus sit consequatur cumque facilis sequi 
+                quo perferendis asperiores rem.
+            </p>
+        </div>
+    </body>
+</html>
