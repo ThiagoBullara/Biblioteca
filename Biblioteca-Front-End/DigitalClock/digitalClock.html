@@ -18,7 +18,13 @@
                 <div><span id="ampm"></span></div>
             </div>
         </div>
+        <div class="switchMode" onclick="switchMode()"></div>
         <script type="text/javascript">
+            function switchMode() {
+                const body = document.querySelector('body');
+                body.classList.toggle('light')
+            }
+
             function clock() {
                 var hour = document.getElementById('hour');
                 var minutes = document.getElementById('minutes');

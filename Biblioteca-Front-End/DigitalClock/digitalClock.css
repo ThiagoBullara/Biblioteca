@@ -15,16 +15,24 @@ body {
     background: #060a1f;
 }
 
+body.light {
+    background: #d1dae3;
+}
+
 #clock h2 {
     position: relative;
     display: block;
-    color: #fff;
+    color: #d1dae3;
     text-align: center;
     margin: 10px 0;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4em;
     font-size: 1em;
+}
+
+body.light #clock h2 {
+    color: #060a1f;
 }
 
 #clock #time {
@@ -43,7 +51,7 @@ body {
     width: 100px;
     height: 80px;
     background: #2196f3;
-    color: #fff;
+    color: #d1dae3;
     font-weight: 300;
     display: flex;
     justify-content: center;
@@ -51,6 +59,10 @@ body {
     font-size: 3em;
     z-index: 10;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+body.light #clock #time div span {
+    color: #060a1f;
 }
 
 #clock #time div span:nth-child(2) {
@@ -78,7 +90,45 @@ body {
     width: 60px;
     height: 40px;
     font-size: 1.5em;
-    background: #fff;
-    color: #000;
+    background: #d1dae3;
+    color: #060a1f;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
+
+body.light #clock #time div:nth-last-child(1) span {
+    background: #060a1f;
+    color: #d1dae3;
+
+}
+
+.switchMode {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #d1dae3;
+    color: #d1dae3;
+    font-family: 'consolas';
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.switchMode:before {
+    position: absolute;
+    left: 25px;
+    content: 'Light Mode';
+    white-space: nowrap;
+} 
+
+body.light .switchMode {
+    background: #060a1f;
+    color: #060a1f;
+}
+
+body.light .switchMode:before {
+    content: 'Dark Mode';
+} 
