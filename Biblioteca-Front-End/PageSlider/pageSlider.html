@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/slider.png" type="image/x-icon">
+        <link rel="stylesheet" href="pageSlider.css">
+        <title>Page Slider</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Products.</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner">
+            <div class="imgBx">
+                <img src="img/img1.jpg" alt="Banner 1" class="active">
+                <img src="img/img2.jpg" alt="Banner 2">
+                <img src="img/img3.jpg" alt="Banner 3">
+                <img src="img/img4.jpg" alt="Banner 4">
+            </div>
+            <div class="contentBx">
+                <div class="active">
+                    <h2>Slide Text One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                    voluptas, officia optio?</p>
+                    <a href="#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text Two</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero id quia repellat vel 
+                    quam esse maxime tenetur fuga.</p>
+                    <a href="#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel consequuntur
+                    Id sapiente qui odio hic.</p>
+                    <a href="#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text Four</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    illum quia soluta eaque quae. Maiores, illo?</p>
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="previusSlide(); previusSlideText();"></li>
+                <li onclick="nextSlide(); nextSlideText();"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            const imgBx = document.querySelector('.imgBx');
+            const slides = imgBx.getElementsByTagName('img');
+            var i = 0;
+
+            function nextSlide() {
+                slides[i].classList.remove('active');
+                i = (i + 1) % slides.length;
+                slides[i].classList.add('active');
+            };
+
+            function previusSlide() {
+                slides[i].classList.remove('active');
+                i = (i - 1 + slides.length) % slides.length;
+                slides[i].classList.add('active');
+            };
+
+            const contentBx = document.querySelector('.contentBx');
+            const slidesText = contentBx.getElementsByTagName('div');
+            var x = 0;
+
+            function nextSlideText() {
+                slidesText[x].classList.remove('active');
+                x = (x + 1) % slidesText.length;
+                slidesText[x].classList.add('active');
+            };
+
+            function previusSlideText() {
+                slidesText[x].classList.remove('active');
+                x = (x - 1 + slidesText.length) % slidesText.length;
+                slidesText[x].classList.add('active');
+            };
+
+        </script>
+    </body>
+</html>
