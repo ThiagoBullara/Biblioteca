@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="landingPage.css">
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+                    <p>Lorem veniam ipsum dolor sit amet, consectetur adipisicing elit. Illo expedita ipsa unde voluptatem 
+                    accusantium ducimus doloribus consequatur consectetur et, veniam necessitatibus quisquam magni aut vero 
+                    voluptate ut a consectetur dolorum ratione doloribus consectetur veniam consectetur neque veniam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/img1.png" class="starbucks" alt="Starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/thumb1.png" alt="Thumb 1" onclick="imgSlider('img/img1.png'); colorCircle('#017143');"></li>
+                <li><img src="img/thumb2.png" alt="Thumb 2" onclick="imgSlider('img/img2.png'); colorCircle('#eb7495');"></li>
+                <li><img src="img/thumb3.png" alt="Thumb 3" onclick="imgSlider('img/img3.png'); colorCircle('#d752b1');"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(valor) {
+                document.querySelector('.starbucks').src = valor;
+            };
+
+            function colorCircle(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            };
+        </script>
+    </body>
+</html>
