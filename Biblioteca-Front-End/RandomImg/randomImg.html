@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
+        <link rel="stylesheet" href="randomImg.css">
+        <title>Random Image</title>
+    </head>
+    <body>
+        <section class="container"></section>
+    </body>
+    <script>
+        function changeBg() {
+
+            const imagens = [
+                'url("img/1bg.jpeg")',
+                'url("img/2bg.jpeg")',
+                'url("img/3bg.jpeg")',
+                'url("img/6bg.jpeg")',
+                'url("img/7bg.jpeg")',
+                'url("img/8bg.jpeg")',
+                'url("img/9bg.jpeg")',
+                'url("img/10bg.jpeg")'
+            ];
+
+            const section = document.querySelector('section')
+            const bg = imagens[Math.floor(Math.random() * imagens.length)];
+            section.style.backgroundImage = bg;
+        };
+
+        setInterval(changeBg, 1500);
+
+    </script>
+</html>

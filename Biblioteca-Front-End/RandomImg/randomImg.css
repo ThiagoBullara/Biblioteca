@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background: url(img/10bg.jpeg) center no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
