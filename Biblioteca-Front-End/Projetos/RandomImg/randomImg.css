@@ -9,3 +9,16 @@ body {
     background-size: cover;
     transition: 1s;
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: #000;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

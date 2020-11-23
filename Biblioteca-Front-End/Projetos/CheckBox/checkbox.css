@@ -88,3 +88,15 @@ label input:checked ~ .indicator:before {
                 0 0 30px #0f0,
                 0 0 40px #0f0;
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

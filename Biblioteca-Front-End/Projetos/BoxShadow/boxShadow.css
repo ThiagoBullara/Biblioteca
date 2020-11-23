@@ -65,3 +65,15 @@ body {
                 inset -10px -10px 10px rgba(255, 255, 255, 0.2),
                 inset 15px 15px 15px rgba(255, 255, 255, 0.1);
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: black;
+    position: absolute;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

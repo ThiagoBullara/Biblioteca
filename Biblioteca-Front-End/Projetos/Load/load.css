@@ -65,3 +65,16 @@ section .loader span:before {
         transform: scale(0);
     }
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

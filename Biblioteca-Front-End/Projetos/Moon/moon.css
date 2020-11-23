@@ -74,3 +74,16 @@ section img {
 .content h2 {
     margin-bottom: 20px;
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1000000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

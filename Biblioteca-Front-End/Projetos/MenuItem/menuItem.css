@@ -82,3 +82,15 @@ ul li a:hover span:nth-child(2) {
     transition-delay: 0s;
 }
 
+.return {
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

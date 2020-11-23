@@ -147,3 +147,19 @@ body.light .switchMode {
 body.light .switchMode:before {
     content: 'Dark Mode';
 } 
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: #d1dae3;
+    position: absolute;
+    text-decoration: none;
+}
+
+body.light .return {
+    color: #091921;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

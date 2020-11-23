@@ -71,3 +71,15 @@ body {
                  0 0 20px #00fff1
 }
 
+.return {
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

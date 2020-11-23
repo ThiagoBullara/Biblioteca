@@ -56,3 +56,15 @@ span {
         opacity: 0;
     }
 }
+
+.return {
+    top: 10px;
+    left: 20px;
+    color: black;
+    position: absolute;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

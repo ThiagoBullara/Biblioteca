@@ -376,6 +376,19 @@ section {
     text-decoration: none;
 }
 
+.return {
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1000000;
+}
+
+.return:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 991px) {
     header, header.sticky {
         padding: 10px 20px;
