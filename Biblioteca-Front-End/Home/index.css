@@ -48,6 +48,18 @@ h1 {
     text-decoration: underline;
 }
 
+.return {
+    top: 10px;
+    right: 20px;
+    color: black;
+    position: absolute;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 0) {
     .links-list {
         flex-direction: column;
