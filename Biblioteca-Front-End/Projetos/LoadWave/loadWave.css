@@ -36,6 +36,18 @@ body {
     animation-delay: calc(-0.1s * var(--i));
 }
 
+.return {
+    top: 10px;
+    left: 20px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
